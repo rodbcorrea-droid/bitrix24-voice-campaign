@@ -1,0 +1,48 @@
+{
+  "name": "bitrix24-voice-campaign",
+  "version": "0.1.0",
+  "description": "Mass outbound calling system with AI voice agent, integrated with Bitrix24 CRM",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/ tests/",
+    "lint:fix": "eslint src/ tests/ --fix",
+    "format": "prettier --write \"src/**/*.js\" \"tests/**/*.js\"",
+    "setup": "node scripts/setup.js",
+    "smoke": "node scripts/smoke.js",
+    "build:check": "node scripts/build-check.js",
+    "db:migrate": "node scripts/db-migrate.js"
+  },
+  "keywords": [
+    "bitrix24",
+    "voice-agent",
+    "outbound-calls",
+    "crm-automation",
+    "ai-telephony"
+  ],
+  "author": "Rodrigo Brandão",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "fastify": "^5.0.0",
+    "better-sqlite3": "^11.0.0",
+    "dotenv": "^16.4.0",
+    "pino": "^9.0.0",
+    "pino-pretty": "^11.0.0",
+    "uuid": "^10.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "vitest": "^2.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.3.0",
+    "@eslint/js": "^9.0.0"
+  }
+}

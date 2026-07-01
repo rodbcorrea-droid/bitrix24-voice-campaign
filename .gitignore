@@ -1,1 +1,31 @@
-node_modules/\n.env\n*.log\ndist/\ncoverage/\n.DS_Store\nThumbs.db\n*.local
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Database
+data/*.db
+data/*.db-journal
+data/*.db-wal
+
+# Logs
+*.log
+logs/
+
+# Build
+dist/
+coverage/
+
+# IDE
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# OS
+._*
